@@ -1,0 +1,25 @@
+__pycache__/
+    .ipynb_checkpoints/
+    *.pyc
+    *.pyo
+    *.DS_Store
+    env/pip_freeze.txt
+    UAM_validations/mcmc_runs/
+    UAM_validations/figures_drafts/
+    UAM_validations/data/
+    UAM_validations/logs/
+    GoldenMaster/figures/
+    GoldenMaster/reports/
+# Python/Jupyter
+# Large/generated project artifacts
+UAM_validations/imports/
+UAM_validations/reports_drafts/
+GoldenMaster/reports/SN_*.md
+*.zip
+*.tar.gz
+*.npz
+*.npy
+*.csv
+sha256_manifest.json
+# OS cruft
+Thumbs.db

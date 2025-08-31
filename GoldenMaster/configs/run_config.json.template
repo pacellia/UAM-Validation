@@ -1,0 +1,21 @@
+{
+  "dataset": {
+    "pantheon_plus_csv": "GoldenMaster/data_curated/pantheon_plus_mb_corr.csv",
+    "pantheon_plus_spd": "GoldenMaster/data_curated/PantheonPlus_cov_SPD.npy",
+    "column_map": {
+      "mode": "mu",
+      "z_col": 18,
+      "data_col": 10
+    }
+  },
+  "theory": {
+    "module": "GoldenMaster/theory/uam_model.py",
+    "omega_m_fixed": "pi^3/100",
+    "eps_bracket": 1e-06
+  },
+  "compare_models": [
+    "UAM",
+    "LCDM"
+  ],
+  "notes": "Template only. Will be filled after data curation and theory unit tests."
+}
