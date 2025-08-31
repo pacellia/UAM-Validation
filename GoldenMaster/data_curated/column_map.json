@@ -1,5 +1,7 @@
 {
+  "table": "Pantheon+SH0ES.dat",
+  "cov": "Pantheon+SH0ES_STAT+SYS.cov",
   "z_col": "zHD",
   "mu_col": "m_b_corr",
-  "spd_semantics": "precision"
+  "spd_semantics": "covariance"
 }
