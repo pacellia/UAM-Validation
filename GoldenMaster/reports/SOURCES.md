@@ -1,36 +1,43 @@
-# Data Sources & Acquisition
+# Data Sources & Retrieval (Reviewer-Ready)
 
-    ## Pantheon+ Supernovae (SN)
-    - **Browse page**: Search for “Pantheon+ supernova dataset arXiv 2023 supplementary” (or use the Scolnic group release page).
-    - **What to download**:
-      - Corrected SN table (CSV/ASCII) that includes either distance modulus μ or m_b_corr.
-      - Full SPD matrix (either covariance or precision). The curated copy will pin its interpretation.
-    - **Curation step**:
-      - Place the CSV as: `GoldenMaster/data_curated/pantheon_plus_mb_corr.csv`
-      - Place the SPD as:  `GoldenMaster/data_curated/PantheonPlus_cov_SPD.npy`
-      - Record SHA256 hashes in `GoldenMaster/data_curated/README_SN_curated.txt`
-      - Pin column indices in `configs/run_config.json` (copy from `.template` and edit).
+This document pins exactly what data are required and how to fetch them so any reviewer can reconstruct the inputs.
 
-    ## BAO (Phase 2)
-    - Add compilation source links (e.g., BOSS/eBOSS DR releases).
-    - Pin column meaning and units.
+## 1) Pantheon+ Supernovae (SN-only baseline)
 
-    ## Notes
-    - Do not rely on autodetection; always pin exact columns and SPD semantics in the curated README and run config.
+**We need**
+- `pantheon_plus_mb_corr.csv` — calibrated distance-modulus–like vector used in SN-only comparisons.
+- `PantheonPlus_cov_SPD.npy` — published SPD matrix; in this project we treat it as a **precision** matrix (see column map below).
 
-# SOURCES
+**Where to get it (browse_page)**
+1. In your browser, search: **Pantheon+ data release CSV SPD** (or open the official Pantheon+ data companion page referenced by the paper).
+2. Download the two files named above from the official source.
+3. Place them into: `notebook/GoldenMaster/data_curated/`
 
-[updated 2025-08-31 12:47:43Z UTC]
+**Column map & semantics (pinned)**
+File: `notebook/GoldenMaster/data_curated/column_map.json`
+```json
+{ "z_col": "zHD", "mu_col": "m_b_corr", "spd_semantics": "precision" }
+```
 
-## Pantheon+ (arXiv 2023)
-- **Description**: Pantheon+ supernova compilation with corrected magnitudes and SPD (precision or covariance) matrix.
-- **Download Instructions**:
-  1. Visit the Pantheon+ project page or arXiv (2023 release).
-  2. Download the corrected magnitudes CSV (commonly named `pantheon_plus_mb_corr.csv`).
-  3. Download the SPD matrix file (commonly `PantheonPlus_cov_SPD.npy`).
-  4. Place both files anywhere under Google Drive; the pipeline will copy them into:
-     `GoldenMaster/data_curated/`.
-- **Pinned Columns**: Redshift (`z_col`) and data (`data_col`) are recorded in
-  `GoldenMaster/configs/run_config.json` generated from the template.
-- **Semantics**: SPD is treated as **precision** by default; change to `covariance`
-  in `run_config.json` if needed.
+**Quick local verify (optional)**
+```python
+import numpy as np, pandas as pd
+from pathlib import Path
+root = Path("notebook/GoldenMaster/data_curated")
+df  = pd.read_csv(root/"pantheon_plus_mb_corr.csv", comment="#")
+M   = np.load(root/"PantheonPlus_cov_SPD.npy")
+print("[csv] shape:", df.shape, "| first cols:", list(df.columns)[:6])
+print("[spd] shape:", M.shape, "| square:", M.shape[0]==M.shape[1])
+```
+
+## 2) BAO (placeholder for Phase 2)
+When proceeding to SN+BAO, we will add:
+- BAO compilation (source URLs/DOIs),
+- exact columns used,
+- covariance/precision notes,
+- checksums.
+
+## 3) Licensing & Provenance
+- Datasets are the property of their authors/collaborations.
+- We distribute retrieval instructions only; obtain files from official sources.
+- For exact versions used here, see `GoldenMaster/reports/REVIEW_ARCHIVE_MANIFEST.md` and archive SHA256 manifests.

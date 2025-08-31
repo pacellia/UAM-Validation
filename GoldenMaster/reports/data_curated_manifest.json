@@ -1,0 +1,15 @@
+{
+  "source": "PantheonPlusSH0ES/DataRelease (official GitHub)",
+  "files": {
+    "Pantheon+SH0ES.dat": {
+      "path": "/content/notebook/GoldenMaster/data_curated/Pantheon+SH0ES.dat",
+      "bytes": 579283,
+      "sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8"
+    },
+    "Pantheon+SH0ES_STAT+SYS.cov": {
+      "path": "/content/notebook/GoldenMaster/data_curated/Pantheon+SH0ES_STAT+SYS.cov",
+      "bytes": 33284960,
+      "sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc"
+    }
+  }
+}
