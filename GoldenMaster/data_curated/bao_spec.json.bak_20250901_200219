@@ -29,8 +29,8 @@
       "sigma_col": null
     },
     {
-      "name": "DR12_CONS_overrd",
-      "file": "GoldenMaster/data_curated/DR12_CONS_overrd_mean.csv",
+      "name": "DR12_CONS",
+      "file": "GoldenMaster/data_curated/DR12_CONS_mean.csv",
       "format": "csv",
       "z_col": "z",
       "obs_type": "stack:DM_over_rd,DH_over_rd",
@@ -38,7 +38,7 @@
         "DM_over_rd",
         "DH_over_rd"
       ],
-      "cov": "GoldenMaster/data_curated/DR12_CONS_overrd_cov.txt",
+      "cov": "GoldenMaster/data_curated/DR12_CONS_cov.txt",
       "sigma_col": null
     }
   ]

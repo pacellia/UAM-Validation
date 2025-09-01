@@ -8,3 +8,17 @@
 ## SN+BAO (current spec)
 
 [log] /content/notebook/logs/SNplusBAO_09012025.json
+
+
+## SN + BAO (deterministic; Delta and global alpha marginalized)
+
+Data counts: SN=1701, BAO=10 (blocks=3); total=1711.
+
+LambdaCDM best-fit Omega_m=0.363; global BAO alpha hats — UAM=30.25393, LCDM=30.71740.
+
+| Model | Omega_m | k | chi2_SN | chi2_BAO | chi2_tot | AIC | BIC |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| UAM  | -   | 0 | 1755.11 | 14.68 | 1769.79 | 1769.79 | 1769.79 |
+| LCDM | 0.363 | 1 | 1752.52 | 14.09 | 1766.61 | 1768.61 | 1774.05 |
+
+_Log_: /content/notebook/logs/SNplusBAO_09012025.json
