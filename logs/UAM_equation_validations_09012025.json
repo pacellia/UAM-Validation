@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2025-09-01 15:33:35",
+  "solver": {
+    "EPS": 1e-06,
+    "mono_tol": 1e-08,
+    "slope_tol": 1e-06
+  },
+  "beta": {
+    "max_rel_small_angle": 1.2499999992404114e-08,
+    "tol": 5e-08,
+    "symmetry_ok": true,
+    "pass": true
+  },
+  "w": {
+    "finite_ok": true,
+    "bounds": {
+      "min": -0.6427284506465893,
+      "max": 0.0,
+      "eps": 1e-06
+    },
+    "mono_non_increasing_ok": true,
+    "max_dw_dz": -0.09909714570777162,
+    "pass": true
+  },
+  "E2": {
+    "finite_ok": true,
+    "positive_ok": true,
+    "E2_at_0": 1.0,
+    "norm_ok": true,
+    "pass": true
+  },
+  "overall_pass": true
+}

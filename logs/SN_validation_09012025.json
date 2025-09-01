@@ -1,0 +1,116 @@
+{
+  "timestamp_utc": "2025-09-01 15:17:53",
+  "env": {
+    "python": "3.12.11 (main, Jun  4 2025, 08:56:18) [GCC 11.4.0]",
+    "platform": "Linux-6.1.123+-x86_64-with-glibc2.35",
+    "numpy": "2.0.2",
+    "scipy": "1.16.1",
+    "pandas": "2.2.2",
+    "matplotlib": "3.10.0"
+  },
+  "data": {
+    "table": "/content/notebook/GoldenMaster/data_curated/Pantheon+SH0ES.dat",
+    "cov": "/content/notebook/GoldenMaster/data_curated/Pantheon+SH0ES_STAT+SYS.cov",
+    "z_mask": {
+      "min_allowed": 0.0,
+      "max_allowed": 2.3,
+      "N_total": 1701,
+      "N_used": 1701,
+      "z_used_min": 0.00122,
+      "z_used_max": 2.26137
+    },
+    "row_parity_ok": true
+  },
+  "covariance": {
+    "flat_length_in_file": 2893402,
+    "sentinel_removed": "head",
+    "diag_stats": {
+      "min": 0.00644455,
+      "median": 0.02419881,
+      "max": 0.3910331
+    },
+    "eig_stats_before": {
+      "min": 0.0008027816532257779,
+      "med": 0.021827103544769782,
+      "max": 2.523706321309304
+    },
+    "spd_enforcement": {
+      "method": "none"
+    },
+    "parity_ok": true
+  },
+  "solver": {
+    "w_of_z": {
+      "EPS": 1e-06,
+      "tol": 1e-12,
+      "y_hi_cap": 50.0
+    },
+    "integration": {
+      "n_grid_runs": [
+        15000,
+        20000,
+        25000
+      ]
+    }
+  },
+  "convergence": {
+    "UAM": {
+      "chi2_vs_15000": 0.0001382691116305068,
+      "chi2_vs_25000": 1.5934929251670837e-06,
+      "delta_vs_15000": 4.63143372542163e-08,
+      "delta_vs_25000": 2.3075148236628706e-08
+    },
+    "LCDM": {
+      "chi2_vs_15000": 0.00011739999172277749,
+      "chi2_vs_25000": 6.89856824465096e-06,
+      "delta_vs_15000": 4.504886064182756e-08,
+      "delta_vs_25000": 2.240721541646451e-08
+    },
+    "delta_stability_ok": true,
+    "chi2_stability_ok": true
+  },
+  "results": {
+    "15000": {
+      "n_grid": 15000,
+      "UAM": {
+        "chi2": 1755.110307272218,
+        "delta_hat": -1.1901781480111262,
+        "rms_delta_marg": 0.17238675495495392
+      },
+      "LCDM": {
+        "chi2": 1752.507541827188,
+        "delta_hat": -1.1808049185868876,
+        "rms_delta_marg": 0.17226283744568932,
+        "Omega_m": 0.361
+      }
+    },
+    "20000": {
+      "n_grid": 20000,
+      "UAM": {
+        "chi2": 1755.1104455413297,
+        "delta_hat": -1.190178101696789,
+        "rms_delta_marg": 0.17238675958410854
+      },
+      "LCDM": {
+        "chi2": 1752.5076592271798,
+        "delta_hat": -1.180804873538027,
+        "rms_delta_marg": 0.17226283972868317,
+        "Omega_m": 0.361
+      }
+    },
+    "25000": {
+      "n_grid": 25000,
+      "UAM": {
+        "chi2": 1755.1104439478368,
+        "delta_hat": -1.1901780786216407,
+        "rms_delta_marg": 0.17238676284108925
+      },
+      "LCDM": {
+        "chi2": 1752.5076523286116,
+        "delta_hat": -1.1808048511308116,
+        "rms_delta_marg": 0.17226284154424193,
+        "Omega_m": 0.361
+      }
+    }
+  }
+}
