@@ -1,0 +1,45 @@
+{
+  "generated_utc": "2025-09-01 17:27:51",
+  "source": "CobayaSampler/bao_data (GitHub)",
+  "entries": [
+    {
+      "name": "DR12_LRG",
+      "file": "GoldenMaster/data_curated/bao_std/DR12_LRG_mean.csv",
+      "format": "csv",
+      "z_col": "z",
+      "obs_type": "stack:DM_over_rd,DH_over_rd",
+      "obs_cols": [
+        "DM_over_rd",
+        "DH_over_rd"
+      ],
+      "cov": "GoldenMaster/data_curated/bao_std/DR12_LRG_cov.txt",
+      "sigma_col": null
+    },
+    {
+      "name": "DR16_LRG",
+      "file": "GoldenMaster/data_curated/bao_std/DR16_LRG_mean.csv",
+      "format": "csv",
+      "z_col": "z",
+      "obs_type": "stack:DM_over_rd,DH_over_rd",
+      "obs_cols": [
+        "DM_over_rd",
+        "DH_over_rd"
+      ],
+      "cov": "GoldenMaster/data_curated/bao_std/DR16_LRG_cov.txt",
+      "sigma_col": null
+    },
+    {
+      "name": "DR16_QSO",
+      "file": "GoldenMaster/data_curated/bao_std/DR16_QSO_mean.csv",
+      "format": "csv",
+      "z_col": "z",
+      "obs_type": "stack:DM_over_rd,DH_over_rd",
+      "obs_cols": [
+        "DM_over_rd",
+        "DH_over_rd"
+      ],
+      "cov": "GoldenMaster/data_curated/bao_std/DR16_QSO_cov.txt",
+      "sigma_col": null
+    }
+  ]
+}

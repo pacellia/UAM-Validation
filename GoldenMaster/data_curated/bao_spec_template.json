@@ -1,0 +1,26 @@
+{
+  "note": "Fill this with your curated BAO entries. Remove this note when ready.",
+  "entries": [
+    {
+      "file": "GoldenMaster/data_curated/EXAMPLE_BAO_DV_over_rd.dat",
+      "format": "whitespace",
+      "z_col": "z",
+      "obs_type": "DV_over_rd",
+      "obs_col": "DV_over_rd",
+      "sigma_col": "sigma",
+      "cov": null
+    },
+    {
+      "file": "GoldenMaster/data_curated/EXAMPLE_BAO_DM_DH_over_rd.csv",
+      "format": "csv",
+      "z_col": "z",
+      "obs_type": "stack:DM_over_rd,DH_over_rd",
+      "obs_cols": [
+        "DM_over_rd",
+        "DH_over_rd"
+      ],
+      "cov": "GoldenMaster/data_curated/EXAMPLE_BAO_DM_DH_over_rd.cov",
+      "sigma_col": null
+    }
+  ]
+}

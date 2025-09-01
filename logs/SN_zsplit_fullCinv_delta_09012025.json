@@ -1,0 +1,62 @@
+{
+  "timestamp_utc": "2025-09-01 16:27:03",
+  "note": "Per-bin \u0394\u0302 via full C^{-1} selector method; \u039bCDM \u03a9m fixed to global best-fit.",
+  "Omega_m_global": 0.361,
+  "bins": [
+    {
+      "name": "0.000-0.100",
+      "N": 741,
+      "UAM": {
+        "delta_hat": -1.6418327370220098,
+        "sigma_delta": 0.006754100611372164
+      },
+      "LCDM_fixedOm": {
+        "delta_hat": -1.6330665810903435,
+        "sigma_delta": 0.006754100611372164
+      }
+    },
+    {
+      "name": "0.100-0.600",
+      "N": 831,
+      "UAM": {
+        "delta_hat": -1.4260370954740484,
+        "sigma_delta": 0.0054226031175978046
+      },
+      "LCDM_fixedOm": {
+        "delta_hat": -1.4132510764730541,
+        "sigma_delta": 0.0054226031175978046
+      }
+    },
+    {
+      "name": "0.600-2.300",
+      "N": 129,
+      "UAM": {
+        "delta_hat": -1.4324221150748309,
+        "sigma_delta": 0.01671360150923067
+      },
+      "LCDM_fixedOm": {
+        "delta_hat": -1.410417355000737,
+        "sigma_delta": 0.01671360150923067
+      }
+    }
+  ],
+  "consistency": {
+    "UAM": {
+      "delta_bar": -1.5059130747000127,
+      "chi2": 641.2890132605526,
+      "dof": 2,
+      "p_value": 0.0
+    },
+    "LCDM": {
+      "delta_bar": -1.4940532809293985,
+      "chi2": 670.7015990982427,
+      "dof": 2,
+      "p_value": 0.0
+    }
+  },
+  "covariance": {
+    "spd_enforcement": {
+      "method": "none"
+    }
+  }
+}
