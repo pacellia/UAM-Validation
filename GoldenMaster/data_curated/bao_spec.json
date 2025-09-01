@@ -3,19 +3,6 @@
   "source": "CobayaSampler/bao_data (GitHub)",
   "entries": [
     {
-      "name": "DR12_LRG",
-      "file": "GoldenMaster/data_curated/bao_std/DR12_LRG_mean.csv",
-      "format": "csv",
-      "z_col": "z",
-      "obs_type": "stack:DM_over_rd,DH_over_rd",
-      "obs_cols": [
-        "DM_over_rd",
-        "DH_over_rd"
-      ],
-      "cov": "GoldenMaster/data_curated/bao_std/DR12_LRG_cov.txt",
-      "sigma_col": null
-    },
-    {
       "name": "DR16_LRG",
       "file": "GoldenMaster/data_curated/bao_std/DR16_LRG_mean.csv",
       "format": "csv",
@@ -39,6 +26,19 @@
         "DH_over_rd"
       ],
       "cov": "GoldenMaster/data_curated/bao_std/DR16_QSO_cov.txt",
+      "sigma_col": null
+    },
+    {
+      "name": "DR12_CONS",
+      "file": "GoldenMaster/data_curated/DR12_CONS_mean.csv",
+      "format": "csv",
+      "z_col": "z",
+      "obs_type": "stack:DM_over_rd,DH_over_rd",
+      "obs_cols": [
+        "DM_over_rd",
+        "DH_over_rd"
+      ],
+      "cov": "GoldenMaster/data_curated/DR12_CONS_cov.txt",
       "sigma_col": null
     }
   ]
